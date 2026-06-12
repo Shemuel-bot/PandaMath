@@ -5,14 +5,15 @@ import heroImg from './assets/hero.png'
 import './App.css'
 
 import Sidebar from './Components/Sidebar'
+import MainScreenCenter from './Components/MainScreenCenter'
 
 function App() {
 
   return (
     <>
-      <div>
+      <div className='top-container'>
         <Sidebar/>
-
+        <MainScreenCenter/>
       </div>
     </>
   )
