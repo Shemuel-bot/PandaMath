@@ -1,9 +1,9 @@
-import   '../css/sideBar.css'
+import style from  '../css/sideBar.module.css'
 
 export default function Sidebar(){
     return (
         <>
-            <div className='container'>
+            <div className={style.container}>
                 <h1>User</h1>
                 <button>Play</button>
                 <button>Academy</button>

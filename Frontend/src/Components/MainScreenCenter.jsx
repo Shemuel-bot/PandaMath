@@ -1,12 +1,12 @@
-import '../css/mainScreenCenter.css'
+import style from '../css/mainScreenCenter.module.css'
 
 export default function MainScreenCenter(){
     return(
         <>
-            <div className="container">
+            <div className={style.container}>
                 <div >
                     <div>Image</div>
-                    <H1>Username+123</H1>
+                    <h1>Username+123</h1>
                 </div>
                 <div>
                     <div>
