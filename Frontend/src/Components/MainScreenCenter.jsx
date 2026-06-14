@@ -1,4 +1,7 @@
 import style from '../css/mainScreenCenter.module.css'
+import math from '../assets/math.png'
+import podium from '../assets/podium.png'
+import friends from '../assets/high-five.png'
 
 export default function MainScreenCenter(){
     return(
@@ -14,12 +17,21 @@ export default function MainScreenCenter(){
 
                 <div className={style.actions}>
                     <div className={style.actionRow}>
-                        <button type="button" className={style.primaryButton}>Play</button>
+                        <button type="button" className={style.primaryButton}>
+                            <img className={style.img} src={math} alt="" />
+                            Play
+                        </button>
                         <button type="button" className={style.secondaryButton}>Puzzles</button>
                     </div>
                     <div className={style.actionRow}>
-                        <button type="button" className={style.outlineButton}>Leaderboard</button>
-                        <button type="button" className={style.outlineButton}>Friends</button>
+                        <button type="button" className={style.outlineButton}>
+                            <img className={style.img} src={podium} alt=""/>
+                            Leaderboard
+                        </button>
+                        <button type="button" className={style.outlineButton}>
+                             <img className={style.img} src={friends} alt=""/>
+                            Friends
+                        </button>
                     </div>
                 </div>
             </div>
