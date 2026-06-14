@@ -2,6 +2,7 @@ import style from '../css/mainScreenCenter.module.css'
 import math from '../assets/math.png'
 import podium from '../assets/podium.png'
 import friends from '../assets/high-five.png'
+import puzzles from '../assets/puzzle.png'
 
 export default function MainScreenCenter(){
     return(
@@ -21,7 +22,10 @@ export default function MainScreenCenter(){
                             <img className={style.img} src={math} alt="" />
                             Play
                         </button>
-                        <button type="button" className={style.secondaryButton}>Puzzles</button>
+                        <button type="button" className={style.secondaryButton}>
+                            <img className={style.img} src={puzzles} alt="" />
+                            Puzzles
+                        </button>
                     </div>
                     <div className={style.actionRow}>
                         <button type="button" className={style.outlineButton}>
