@@ -1,10 +1,96 @@
-.container {
+.wrapper {
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
 }
 
-.container div{
+.card {
+    width: min(100%, 520px);
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 28px;
+    padding: 2rem;
+    box-shadow: 0 20px 50px rgba(15, 23, 42, 0.14);
+    border: 1px solid rgba(15, 23, 42, 0.08);
     display: flex;
-    flex-direction: row;
-    
+    flex-direction: column;
+    gap: 1.75rem;
+}
+
+.userSection {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.userImage {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #4f46e5 0%, #6366f1 100%);
+    color: #fff;
+    display: grid;
+    place-items: center;
+    font-weight: 700;
+    font-size: 1.25rem;
+    box-shadow: 0 12px 30px rgba(79, 70, 229, 0.18);
+}
+
+.userInfo h1 {
+    margin: 0;
+    font-size: clamp(1.75rem, 2.2vw, 2.3rem);
+    letter-spacing: -0.03em;
+    color: #0f172a;
+}
+
+.userInfo p {
+    margin: 0.5rem 0 0;
+    color: #475569;
+    line-height: 1.6;
+}
+
+.actions {
+    display: grid;
+    gap: 1rem;
+}
+
+.actionRow {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+button {
+    border: none;
+    border-radius: 999px;
+    padding: 0.95rem 1.4rem;
+    font-weight: 600;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-1px);
+    cursor: pointer;
+}
+
+.primaryButton {
+    background: #4f46e5;
+    color: #fff;
+    box-shadow: 0 18px 30px rgba(79, 70, 229, 0.22);
+}
+
+.secondaryButton {
+    background: #eef2ff;
+    color: #3730a3;
+}
+
+.outlineButton {
+    background: transparent;
+    color: #0f172a;
+    border: 1px solid rgba(15, 23, 42, 0.12);
+}
+
+.outlineButton:hover {
+    background: rgba(79, 70, 229, 0.06);
 }
