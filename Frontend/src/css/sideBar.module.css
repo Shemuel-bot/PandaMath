@@ -4,35 +4,36 @@
     align-items: center;
     gap: 1.5rem;
     min-height: 100vh;
-    width: 220px;
-    padding: 2rem 1rem;
-    background: linear-gradient(180deg, #0f172a 0%, #111827 100%);
-    box-shadow: 18px 24px 80px rgba(15, 23, 42, 0.18);
-    border-radius: 0 32px 32px 0;
+    width: 240px;
+    padding: 2rem 1.2rem;
+    background: linear-gradient(180deg, #bfdbfe 0%, #fda4af 100%);
+    box-shadow: 0 24px 60px rgba(15, 23, 42, 0.14);
+    border-radius: 0 36px 36px 0;
 }
 
 .container h1 {
-    color: #f8fafc;
+    color: #1e293b;
     margin: 0;
     font-size: 1.5rem;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.04em;
 }
 
 .container button{
     width: 100%;
-    max-width: 190px;
+    max-width: 210px;
     height: 50px;
     border: none;
     border-radius: 999px;
-    background: rgba(255, 255, 255, 0.08);
-    color: #e2e8f0;
-    font-weight: 600;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.9);
+    color: #0f172a;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.1);
     transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 .container button:hover{
-    background: rgba(255, 255, 255, 0.16);
+    background: rgba(34, 197, 94, 0.15);
     transform: translateY(-1px);
     cursor: pointer;
 }
