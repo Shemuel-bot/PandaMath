@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './index.css'
 import App from './App.jsx'
 import MainScreenCenter from './Components/MainScreenCenter.jsx'
+import SignIn from './Modules/SignIn.jsx'
 
 
 const router = createBrowserRouter([
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
         element: <MainScreenCenter/>
       }
     ]
+  },
+  {
+    path:'/sign-in',
+    element: <SignIn/>
   }
 ])
 

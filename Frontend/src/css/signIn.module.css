@@ -1,0 +1,117 @@
+.page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+  background: radial-gradient(circle at top left, rgba(96, 165, 250, 0.25), transparent 30%),
+              radial-gradient(circle at bottom right, rgba(251, 113, 133, 0.22), transparent 25%),
+              linear-gradient(180deg, #eef2ff 0%, #f8fafc 100%);
+}
+
+.card {
+  width: min(420px, 100%);
+  padding: 2.25rem;
+  border-radius: 32px;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 28px 80px rgba(15, 23, 42, 0.14);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 1.75rem;
+  color: #0f172a;
+  letter-spacing: -0.03em;
+}
+
+.socialRow {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+}
+
+.socialButton,
+.primaryButton,
+.secondaryButton {
+  border: none;
+  border-radius: 16px;
+  min-height: 48px;
+  font-weight: 700;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.socialButton {
+  background: #f8fafc;
+  color: #1f2937;
+  box-shadow: inset 0 0 0 1px rgba(15, 23, 42, 0.08);
+}
+
+.socialButton:hover {
+  background: #e2e8f0;
+  transform: translateY(-1px);
+}
+
+.fieldGroup {
+  display: grid;
+  gap: 1rem;
+}
+
+.fieldGroup label {
+  display: grid;
+  gap: 0.5rem;
+  color: #334155;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.fieldGroup input {
+  width: 100%;
+  min-height: 48px;
+  padding: 0 1rem;
+  border-radius: 16px;
+  border: 1px solid rgba(15, 23, 42, 0.12);
+  background: #f8fafc;
+  color: #0f172a;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.fieldGroup input:focus {
+  border-color: #60a5fa;
+  box-shadow: 0 0 0 4px rgba(96, 165, 250, 0.15);
+}
+
+.primaryButton {
+  width: 100%;
+  background: linear-gradient(135deg, #6366f1,  #fda4af);
+  color: white;
+  box-shadow: 0 18px 30px rgba(34, 197, 94, 0.18);
+}
+
+.primaryButton:hover {
+  transform: translateY(-1px);
+  background: linear-gradient(135deg, #4f46e5, #16a34a);
+}
+
+.footerRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 0.95rem;
+  color: #475569;
+}
+
+.secondaryButton {
+  background: transparent;
+  color: #2563eb;
+  min-width: 118px;
+}
+
+.secondaryButton:hover {
+  text-decoration: underline;
+}

@@ -1,5 +1,5 @@
 import style from  '../css/sideBar.module.css'
-import playIcon from '../assets/puzzle.png'
+import playIcon from '../assets/math.png'
 import academyIcon from '../assets/education.png'
 import trainingIcon from '../assets/podium.png'
 import profileIcon from '../assets/user.png'
