@@ -41,12 +41,22 @@
   min-height: 48px;
   font-weight: 700;
   transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
 }
 
 .socialButton {
   background: #f8fafc;
   color: #1f2937;
   box-shadow: inset 0 0 0 1px rgba(15, 23, 42, 0.08);
+}
+
+.socialIcon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
 }
 
 .socialButton:hover {

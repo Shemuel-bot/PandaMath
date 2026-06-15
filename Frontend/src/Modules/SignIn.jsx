@@ -1,4 +1,6 @@
 import style from '../css/signIn.module.css'
+import googleLogo from '../assets/google.png'
+import facebookLogo from '../assets/facebook.png'
 
 export default function SignIn (){
     return(
@@ -7,8 +9,14 @@ export default function SignIn (){
                 <h3>Sign in or sign up</h3>
 
                 <div className={style.socialRow}>
-                    <button type="button" className={style.socialButton}>Google</button>
-                    <button type="button" className={style.socialButton}>Facebook</button>
+                    <button type="button" className={style.socialButton}>
+                        <img src={googleLogo} alt="Google logo" className={style.socialIcon} />
+                        Google
+                    </button>
+                    <button type="button" className={style.socialButton}>
+                        <img src={facebookLogo} alt="Facebook logo" className={style.socialIcon} />
+                        Facebook
+                    </button>
                 </div>
 
                 <div className={style.fieldGroup}>
