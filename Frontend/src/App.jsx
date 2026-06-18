@@ -5,8 +5,8 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
 
-import Sidebar from './Components/Sidebar'
-import MainScreenCenter from './Components/MainScreenCenter'
+import Sidebar from './Components/Sidebar.jsx'
+import Home from './Components/Home.jsx'
 
 function App() {
 

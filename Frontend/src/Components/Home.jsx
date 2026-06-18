@@ -1,10 +1,10 @@
-import style from '../css/mainScreenCenter.module.css'
+import style from '../css/home.module.css'
 import math from '../assets/math.png'
 import podium from '../assets/podium.png'
 import friends from '../assets/high-five.png'
 import puzzles from '../assets/puzzle.png'
 
-export default function MainScreenCenter(){
+export default function Home(){
     return(
         <div className={style.wrapper}>
             <div className={style.card}>
