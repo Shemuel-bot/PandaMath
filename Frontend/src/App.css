@@ -36,13 +36,21 @@ button {
 .top-container{
     display: flex;
     min-height: 100vh;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: stretch;
     gap: 2rem;
     width: 100%;
     padding: 2rem;
     position: relative;
     z-index: 1;
+}
+
+.main-content {
+    margin-left: 260px;
+    width: calc(100% - 260px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .top-container::before {
@@ -58,5 +66,9 @@ button {
     .top-container {
         flex-direction: column;
         padding: 1rem;
+    }
+    .main-content {
+        margin-left: 0;
+        width: 100%;
     }
 }

@@ -7,6 +7,7 @@ import './App.css'
 
 import Sidebar from './Components/Sidebar.jsx'
 import Home from './Components/Home.jsx'
+import Academy from './Components/Academy.jsx'
 
 function App() {
 
@@ -14,7 +15,9 @@ function App() {
     <>
       <div className='top-container'>
         <Sidebar/>
-        <Outlet/>
+        <main className='main-content'>
+          <Outlet/>
+        </main>
       </div>
     </>
   )
