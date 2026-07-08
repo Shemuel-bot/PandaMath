@@ -20,7 +20,7 @@ export default function Sidebar(){
                 <img src={academyIcon} alt="Academy icon" className={style.icon} />
                 Academy
             </button>
-            <button>
+            <button onClick={() => {navigate('/training')}}>
                 <img src={trainingIcon} alt="Training icon" className={style.icon} />
                 Training
             </button>

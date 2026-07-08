@@ -7,6 +7,7 @@ import Home from './Components/Home.jsx'
 import SignIn from './Modules/SignIn.jsx'
 import Academy from './Components/Academy.jsx'
 import Default from './Components/Default.jsx'
+import Training from './Components/Training.jsx'
 
 
 const router = createBrowserRouter([
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: 'academy',
         element: <Academy/>,
+      },
+      {
+        path: 'training',
+        element: <Training/>
       }
     ]
   },
