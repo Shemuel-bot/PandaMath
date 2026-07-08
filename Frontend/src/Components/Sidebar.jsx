@@ -11,7 +11,7 @@ export default function Sidebar(){
     const navigate = useNavigate()
     return (
         <div className={style.container}>
-            <h1>User</h1>
+            <h1 onClick={() => {navigate('/home')}}>User</h1>
             <button>
                 <img src={playIcon} alt="Play icon" className={style.icon} />
                 Play

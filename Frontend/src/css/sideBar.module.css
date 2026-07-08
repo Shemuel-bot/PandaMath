@@ -33,6 +33,10 @@
     text-transform: uppercase;
 }
 
+.container h1:hover {
+    cursor: pointer;
+}
+
 .container button{
     width: 100%;
     max-width: 220px;
