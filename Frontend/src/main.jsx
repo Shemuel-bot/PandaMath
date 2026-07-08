@@ -6,6 +6,7 @@ import App from './App.jsx'
 import Home from './Components/Home.jsx'
 import SignIn from './Modules/SignIn.jsx'
 import Academy from './Components/Academy.jsx'
+import Default from './Components/Default.jsx'
 
 
 const router = createBrowserRouter([
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
     path:'/',
     element: <App/>,
     children: [
+      {
+        path: '/',
+        element: <Default />
+      },
       {
         path: 'home',
         element: <Home/>
