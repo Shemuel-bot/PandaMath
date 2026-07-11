@@ -1,3 +1,5 @@
+import React from "react";
+
 export default function Training(){
     return(
         <>
@@ -7,9 +9,14 @@ export default function Training(){
                     <h2>Puzzles</h2>
                     <button>Streak</button>
                     <button>Timed</button>
-                    <button>Opponent</button>
+                    <button>PvP</button>
                 </div>
-                
+                <div>
+                    <h2>Areas to work on</h2>
+                    <button>Integrals</button>
+                    <button>Quadratics</button>
+                    <button>Trigonometry</button>
+                </div>
             </div>
         </>
     )
