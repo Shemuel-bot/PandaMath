@@ -25,7 +25,18 @@ export default function Training(){
 
             <div>
                 <h1>Courses</h1>
-                
+                <div>
+                    <button>Elementary math</button>
+                    <button>Pre-algebra</button>
+                    <button>Algebra</button>
+                    <button>Geometry</button>
+                    <button>Trigonometry</button>
+                    <button>Probability and statistics</button>
+                    <button>Calculus</button>
+                    <button>Multivariable calculus</button>
+                    <button>Linear algebra</button>
+                    <button>Abstract algebra</button>
+                </div>
             </div>
         </>
     )
