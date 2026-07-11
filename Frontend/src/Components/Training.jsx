@@ -1,4 +1,8 @@
 import React from "react";
+import style from '../css/training.module.css'
+import fire from '../assets/fire.png'
+import stopwatch from '../assets/stopwatch.png'
+import swords from '../assets/swords.png'
 
 export default function Training(){
     return(
@@ -7,9 +11,9 @@ export default function Training(){
                 <h1>Training</h1>
                 <div>
                     <h2>Puzzles</h2>
-                    <button>Streak</button>
-                    <button>Timed</button>
-                    <button>PvP</button>
+                    <button><img src={fire} alt="Fire icon" className={style.icon} /> Streak</button>
+                    <button><img src={stopwatch} alt="Stopwatch icon" className={style.icon} /> Timed</button>
+                    <button><img src={swords} alt="Swords icon" className={style.icon} /> PvP</button>
                 </div>
                 <div>
                     <h2>Areas to work on</h2>
@@ -17,6 +21,11 @@ export default function Training(){
                     <button>Quadratics</button>
                     <button>Trigonometry</button>
                 </div>
+            </div>
+
+            <div>
+                <h1>Courses</h1>
+                
             </div>
         </>
     )
