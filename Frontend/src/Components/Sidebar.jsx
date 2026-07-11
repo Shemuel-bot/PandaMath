@@ -11,7 +11,7 @@ export default function Sidebar(){
     const navigate = useNavigate()
     return (
         <div className={style.container}>
-            <h1>User</h1>
+            <h1 onClick={() => {navigate('/home')}}>User</h1>
             <button>
                 <img src={playIcon} alt="Play icon" className={style.icon} />
                 Play
@@ -20,7 +20,7 @@ export default function Sidebar(){
                 <img src={academyIcon} alt="Academy icon" className={style.icon} />
                 Academy
             </button>
-            <button>
+            <button onClick={() => {navigate('/training')}}>
                 <img src={trainingIcon} alt="Training icon" className={style.icon} />
                 Training
             </button>
