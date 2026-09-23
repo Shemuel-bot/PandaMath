@@ -13,7 +13,7 @@ body {
     margin: 0;
     background: radial-gradient(circle at top left, rgba(59, 130, 246, 0.2), transparent 18%),
                 radial-gradient(circle at bottom right, rgba(248, 113, 113, 0.18), transparent 15%),
-                linear-gradient(180deg, #02040f 0%, #07111f 100%);
+                linear-gradient(180deg, #0c194b 0%, #07111f 100%);
     color: #e2e8f0;
     overflow-x: hidden;
 }
