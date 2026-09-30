@@ -3,9 +3,9 @@
   display: grid;
   place-items: center;
   padding: 2rem;
-  background: radial-gradient(circle at top left, rgba(56, 189, 248, 0.2), transparent 20%),
-              radial-gradient(circle at bottom right, rgba(236, 72, 153, 0.18), transparent 18%),
-              linear-gradient(180deg, #04070f 0%, #07111f 100%);
+  background: radial-gradient(circle at top left, rgba(0, 0, 139, 0.08), transparent 20%),
+              radial-gradient(circle at bottom right, rgba(96, 165, 250, 0.16), transparent 18%),
+              linear-gradient(180deg, #f5f8ff 0%, #edf3ff 100%);
   position: relative;
 }
 
@@ -13,9 +13,9 @@
   content: '';
   position: absolute;
   inset: 0;
-  background-image: radial-gradient(circle, rgba(255,255,255,0.08) 1px, transparent 1px);
+  background-image: radial-gradient(circle, rgba(0,0,139,0.04) 1px, transparent 1px);
   background-size: 72px 72px;
-  opacity: 0.18;
+  opacity: 0.25;
   pointer-events: none;
 }
 
@@ -23,9 +23,9 @@
   width: min(420px, 100%);
   padding: 2.25rem;
   border-radius: 32px;
-  background: rgba(8, 20, 42, 0.9);
-  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.48), inset 0 0 0 1px rgba(56, 189, 248, 0.18);
-  border: 1px solid rgba(56, 189, 248, 0.22);
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 18px 60px rgba(15, 23, 42, 0.08), inset 0 0 0 1px rgba(0, 0, 139, 0.06);
+  border: 1px solid rgba(0, 0, 139, 0.08);
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -37,7 +37,7 @@
   content: '';
   position: absolute;
   inset: 1rem;
-  border: 1px dashed rgba(56, 189, 248, 0.18);
+  border: 1px dashed rgba(0, 0, 139, 0.12);
   border-radius: 28px;
   pointer-events: none;
 }
@@ -45,9 +45,9 @@
 .card h3 {
   margin: 0;
   font-size: 1.9rem;
-  color: #e2e8f0;
+  color: #0f172a;
   letter-spacing: 0.02em;
-  text-shadow: 0 2px 18px rgba(56, 189, 248, 0.28);
+  text-shadow: none;
 }
 
 .socialRow {
@@ -73,17 +73,17 @@
 }
 
 .socialButton {
-  background: rgba(15, 23, 42, 0.9);
-  color: #e2e8f0;
-  box-shadow: 0 10px 24px rgba(56, 189, 248, 0.16);
-  border: 1px solid rgba(56, 189, 248, 0.24);
+  background: rgba(255, 255, 255, 0.9);
+  color: #0f172a;
+  box-shadow: 0 10px 24px rgba(0, 0, 139, 0.06);
+  border: 1px solid rgba(0, 0, 139, 0.08);
 }
 
 .socialButton::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(56, 189, 248, 0.08), transparent 35%, rgba(236, 72, 153, 0.08));
+  background: linear-gradient(135deg, rgba(0, 0, 139, 0.06), transparent 35%, rgba(59, 130, 246, 0.08));
   opacity: 0;
   transition: opacity 0.2s ease;
 }
@@ -111,7 +111,7 @@
 .fieldGroup label {
   display: grid;
   gap: 0.5rem;
-  color: #cbd5e1;
+  color: #475569;
   font-size: 0.95rem;
   font-weight: 600;
 }
@@ -121,34 +121,34 @@
   min-height: 52px;
   padding: 0 1rem;
   border-radius: 16px;
-  border: 1px solid rgba(148, 163, 184, 0.18);
-  background: rgba(15, 23, 42, 0.88);
-  color: #e2e8f0;
+  border: 1px solid rgba(15, 23, 42, 0.12);
+  background: rgba(255, 255, 255, 0.9);
+  color: #0f172a;
   font-size: 1rem;
   outline: none;
   transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
 }
 
 .fieldGroup input::placeholder {
-  color: rgba(226, 232, 240, 0.6);
+  color: rgba(71, 85, 105, 0.7);
 }
 
 .fieldGroup input:focus {
-  border-color: #38bdf8;
-  box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.15);
-  background: rgba(15, 23, 42, 1);
+  border-color: var(--secondary);
+  box-shadow: 0 0 0 4px rgba(0, 0, 139, 0.10);
+  background: rgba(255, 255, 255, 1);
 }
 
 .primaryButton {
   width: 100%;
-  background: linear-gradient(135deg, #0ea5e9 0%, #8b5cf6 100%);
+  background: linear-gradient(135deg, var(--secondary) 0%, #2563eb 100%);
   color: #f8fafc;
-  box-shadow: 0 18px 36px rgba(14, 165, 233, 0.24);
+  box-shadow: 0 18px 36px rgba(0, 0, 139, 0.18);
 }
 
 .primaryButton:hover {
   transform: translateY(-1px);
-  box-shadow: 0 20px 40px rgba(14, 165, 233, 0.32);
+  box-shadow: 0 20px 40px rgba(0, 0, 139, 0.20);
 }
 
 .footerRow {
@@ -157,18 +157,18 @@
   justify-content: space-between;
   gap: 1rem;
   font-size: 0.95rem;
-  color: #94a3b8;
+  color: #475569;
 }
 
 .secondaryButton {
-  background: rgba(15, 23, 42, 0.72);
-  color: #7dd3fc;
+  background: rgba(0, 0, 139, 0.08);
+  color: var(--secondary);
   min-width: 118px;
-  border: 1px solid rgba(125, 211, 252, 0.28);
+  border: 1px solid rgba(0, 0, 139, 0.16);
 }
 
 .secondaryButton:hover {
   text-decoration: none;
-  color: #fff;
-  background: rgba(56, 189, 248, 0.18);
+  color: var(--secondary);
+  background: rgba(0, 0, 139, 0.10);
 }

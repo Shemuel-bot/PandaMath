@@ -6,9 +6,9 @@
     min-height: 100vh;
     width: 260px;
     padding: 2rem 1.4rem;
-    background: linear-gradient(180deg, #0c194b 0%, #0c1733 100%);
-    box-shadow: 0 28px 80px rgba(0, 0, 0, 0.35);
-    border-right: 1px solid rgba(96, 165, 250, 0.18);
+    background: linear-gradient(180deg, #eef5ff 0%, #f9fbff 100%);
+    box-shadow: 0 18px 60px rgba(15, 23, 42, 0.08);
+    border-right: 1px solid rgba(0, 0, 139, 0.08);
     position: fixed;
     left: 0;
     top: 0;
@@ -20,13 +20,13 @@
     content: '';
     position: absolute;
     inset: 0;
-    background: radial-gradient(circle at top left, rgba(59, 130, 246, 0.16), transparent 18%),
-                radial-gradient(circle at bottom right, rgba(236, 72, 153, 0.12), transparent 15%);
+    background: radial-gradient(circle at top left, rgba(0, 0, 139, 0.06), transparent 18%),
+                radial-gradient(circle at bottom right, rgba(59, 130, 246, 0.08), transparent 15%);
     pointer-events: none;
 }
 
 .container h1 {
-    color: #e2e8f0;
+    color: var(--secondary);
     margin: 0;
     font-size: 1.55rem;
     letter-spacing: 0.12em;
@@ -41,13 +41,13 @@
     width: 100%;
     max-width: 220px;
     min-height: 52px;
-    border: 1px solid rgba(148, 163, 184, 0.12);
+    border: 1px solid rgba(0, 0, 139, 0.08);
     border-radius: 999px;
-    background: rgba(15, 23, 42, 0.84);
-    color: #e2e8f0;
+    background: rgba(255, 255, 255, 0.76);
+    color: #0f172a;
     font-weight: 700;
     letter-spacing: 0.01em;
-    box-shadow: 0 10px 28px rgba(59, 130, 246, 0.14);
+    box-shadow: 0 10px 28px rgba(59, 130, 246, 0.08);
     transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
     display: flex;
     align-items: center;
@@ -62,7 +62,7 @@
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(90deg, rgba(96, 165, 250, 0.16), transparent 45%, transparent 55%, rgba(236, 72, 153, 0.16));
+    background: linear-gradient(90deg, rgba(0, 0, 139, 0.06), transparent 45%, transparent 55%, rgba(96, 165, 250, 0.10));
     opacity: 0;
     transition: opacity 0.2s ease;
 }
@@ -80,9 +80,9 @@
 }
 
 .container button:hover{
-    background: rgba(59, 130, 246, 0.16);
+    background: rgba(0, 0, 139, 0.06);
     transform: translateY(-1px);
-    box-shadow: 0 16px 32px rgba(59, 130, 246, 0.24);
+    box-shadow: 0 16px 32px rgba(0, 0, 139, 0.12);
     cursor: pointer;
 }
 

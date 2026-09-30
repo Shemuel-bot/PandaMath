@@ -9,6 +9,7 @@ import SignUp from './Modules/SignUp.jsx'
 import Academy from './Components/Academy.jsx'
 import Default from './Components/Default.jsx'
 import Training from './Components/Training.jsx'
+import Play from './Components/Play.jsx'
 
 
 const router = createBrowserRouter([
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
       {
         path: 'training',
         element: <Training/>
+      },
+      {
+        path: 'play',
+        element: <Play/>
       }
     ]
   },

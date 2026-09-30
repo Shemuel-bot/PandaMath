@@ -12,7 +12,7 @@ export default function Sidebar(){
     return (
         <div className={style.container}>
             <h1 onClick={() => {navigate('/home')}}>User</h1>
-            <button>
+            <button onClick={() => {navigate('/play')}}>
                 <img src={playIcon} alt="Play icon" className={style.icon} />
                 Play
             </button>

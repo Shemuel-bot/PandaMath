@@ -1,8 +1,16 @@
 :root {
-    color-scheme: dark;
+    color-scheme: light;
     font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    background-color: #04070f;
-    color: #e2e8f0;
+    background-color: #eef4ff;
+    color: #0f172a;
+    --secondary: #00008b;
+    --secondary-soft: rgba(0, 0, 139, 0.12);
+    --page-bg: #eef4ff;
+    --surface: rgba(255, 255, 255, 0.86);
+    --surface-strong: #ffffff;
+    --text: #0f172a;
+    --muted: #475569;
+    --border: rgba(15, 23, 42, 0.08);
 }
 
 html, body, #root {
@@ -11,10 +19,10 @@ html, body, #root {
 
 body {
     margin: 0;
-    background: radial-gradient(circle at top left, rgba(59, 130, 246, 0.2), transparent 18%),
-                radial-gradient(circle at bottom right, rgba(248, 113, 113, 0.18), transparent 15%),
-                linear-gradient(180deg, #0c194b 0%, #07111f 100%);
-    color: #e2e8f0;
+    background: radial-gradient(circle at top left, rgba(0, 0, 139, 0.10), transparent 18%),
+                radial-gradient(circle at bottom right, rgba(96, 165, 250, 0.18), transparent 22%),
+                linear-gradient(180deg, #f4f8ff 0%, #edf3ff 100%);
+    color: var(--text);
     overflow-x: hidden;
 }
 
@@ -22,9 +30,9 @@ body::before {
     content: '';
     position: fixed;
     inset: 0;
-    background-image: radial-gradient(circle, rgba(255,255,255,0.12) 1px, transparent 1px);
+    background-image: radial-gradient(circle, rgba(0,0,139,0.04) 1px, transparent 1px);
     background-size: 72px 72px;
-    opacity: 0.2;
+    opacity: 0.8;
     pointer-events: none;
     z-index: 0;
 }
@@ -57,8 +65,8 @@ button {
     content: '';
     position: absolute;
     inset: 0;
-    background: radial-gradient(circle at 20% 20%, rgba(59, 130, 246, 0.25), transparent 18%),
-                radial-gradient(circle at 80% 10%, rgba(236, 72, 153, 0.22), transparent 15%);
+    background: radial-gradient(circle at 20% 20%, rgba(0, 0, 139, 0.10), transparent 18%),
+                radial-gradient(circle at 80% 10%, rgba(59, 130, 246, 0.12), transparent 15%);
     pointer-events: none;
 }
 
