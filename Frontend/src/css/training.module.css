@@ -1,0 +1,119 @@
+.page {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+}
+
+.columnLayout {
+    width: min(100%, 1100px);
+    display: grid;
+    grid-template-columns: 1.05fr 1.3fr;
+    gap: 1.5rem;
+}
+
+.panel {
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid rgba(0, 0, 139, 0.08);
+    border-radius: 28px;
+    padding: 1.5rem;
+    box-shadow: 0 18px 60px rgba(15, 23, 42, 0.06);
+}
+
+.panelHeader {
+    margin-bottom: 1.5rem;
+}
+
+.eyebrow {
+    margin: 0 0 0.35rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 0.72rem;
+    font-weight: 800;
+    color: #00008b;
+}
+
+.panelHeader h1 {
+    margin: 0;
+    font-size: clamp(2rem, 3vw, 2.8rem);
+    color: #0f172a;
+}
+
+.sectionGroup {
+    display: grid;
+    gap: 0.8rem;
+    margin-bottom: 1.8rem;
+}
+
+.sectionGroup h2 {
+    margin: 0;
+    color: #0f172a;
+    font-size: 1.2rem;
+}
+
+.buttonGrid,
+.pillGrid,
+.courseGrid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.primaryButton,
+.pillButton,
+.courseButton {
+    border: 1px solid rgba(0, 0, 139, 0.08);
+    border-radius: 16px;
+    background: rgba(245, 248, 255, 0.9);
+    color: #0f172a;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.primaryButton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    min-width: 140px;
+    min-height: 52px;
+    padding: 0.8rem 1rem;
+    background: linear-gradient(135deg, rgba(0, 0, 139, 0.08), rgba(96, 165, 250, 0.10));
+}
+
+.pillButton,
+.courseButton {
+    padding: 0.75rem 1rem;
+}
+
+.primaryButton:hover,
+.pillButton:hover,
+.courseButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(0, 0, 139, 0.08);
+    border-color: rgba(0, 0, 139, 0.16);
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.courseGrid {
+    gap: 0.8rem;
+}
+
+.courseButton {
+    flex: 1 1 180px;
+    min-height: 54px;
+}
+
+@media (max-width: 900px) {
+    .columnLayout {
+        grid-template-columns: 1fr;
+    }
+}

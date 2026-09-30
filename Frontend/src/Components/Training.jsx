@@ -1,43 +1,83 @@
-import React from "react";
 import style from '../css/training.module.css'
 import fire from '../assets/fire.png'
 import stopwatch from '../assets/stopwatch.png'
 import swords from '../assets/swords.png'
 
-export default function Training(){
-    return(
-        <>
-            <div>
-                <h1>Training</h1>
-                <div>
-                    <h2>Puzzles</h2>
-                    <button><img src={fire} alt="Fire icon" className={style.icon} /> Streak</button>
-                    <button><img src={stopwatch} alt="Stopwatch icon" className={style.icon} /> Timed</button>
-                    <button><img src={swords} alt="Swords icon" className={style.icon} /> PvP</button>
-                </div>
-                <div>
-                    <h2>Areas to work on</h2>
-                    <button>Integrals</button>
-                    <button>Quadratics</button>
-                    <button>Trigonometry</button>
-                </div>
-            </div>
+const puzzleModes = [
+    { label: 'Streak', icon: fire },
+    { label: 'Timed', icon: stopwatch },
+    { label: 'PvP', icon: swords }
+]
 
-            <div>
-                <h1>Courses</h1>
-                <div>
-                    <button>Elementary math</button>
-                    <button>Pre-algebra</button>
-                    <button>Algebra</button>
-                    <button>Geometry</button>
-                    <button>Trigonometry</button>
-                    <button>Probability and statistics</button>
-                    <button>Calculus</button>
-                    <button>Multivariable calculus</button>
-                    <button>Linear algebra</button>
-                    <button>Abstract algebra</button>
-                </div>
+const focusAreas = [
+    'Integrals',
+    'Quadratics',
+    'Trigonometry',
+    'Algebra',
+    'Geometry',
+    'Probability',
+    'Calculus',
+    'Linear algebra'
+]
+
+const courses = [
+    'Elementary math',
+    'Pre-algebra',
+    'Algebra',
+    'Geometry',
+    'Trigonometry',
+    'Probability and statistics',
+    'Calculus',
+    'Multivariable calculus',
+    'Linear algebra',
+    'Abstract algebra'
+]
+
+export default function Training() {
+    return (
+        <div className={style.page}>
+            <div className={style.columnLayout}>
+                <section className={style.panel}>
+                    <div className={style.panelHeader}>
+                        <p className={style.eyebrow}>Practice</p>
+                        <h1>Training</h1>
+                    </div>
+
+                    <div className={style.sectionGroup}>
+                        <h2>Puzzles</h2>
+                        <div className={style.buttonGrid}>
+                            {puzzleModes.map((mode) => (
+                                <button key={mode.label} type="button" className={style.primaryButton}>
+                                    <img src={mode.icon} alt={`${mode.label} icon`} className={style.icon} />
+                                    {mode.label}
+                                </button>
+                            ))}
+                        </div>
+                    </div>
+
+                    <div className={style.sectionGroup}>
+                        <h2>Areas to work on</h2>
+                        <div className={style.pillGrid}>
+                            {focusAreas.map((area) => (
+                                <button key={area} type="button" className={style.pillButton}>{area}</button>
+                            ))}
+                        </div>
+                    </div>
+                </section>
+
+                <section className={style.panel}>
+                    <div className={style.panelHeader}>
+                        <p className={style.eyebrow}>Courses</p>
+                        <h1>Learn more</h1>
+                    </div>
+
+                    <div className={style.courseGrid}>
+                        {courses.map((course) => (
+                            <button key={course} type="button" className={style.courseButton}>{course}</button>
+                        ))}
+                    </div>
+                </section>
             </div>
-        </>
+        </div>
     )
 }

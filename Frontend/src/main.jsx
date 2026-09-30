@@ -9,7 +9,9 @@ import SignUp from './Modules/SignUp.jsx'
 import Academy from './Components/Academy.jsx'
 import Default from './Components/Default.jsx'
 import Training from './Components/Training.jsx'
+import Profile from './Components/Profile.jsx'
 import Play from './Components/Play.jsx'
+import Settings from './Components/Settings.jsx'
 
 
 const router = createBrowserRouter([
@@ -36,6 +38,14 @@ const router = createBrowserRouter([
       {
         path: 'play',
         element: <Play/>
+      },
+      {
+        path: 'profile',
+        element: <Profile/>
+      },
+      {
+        path: 'settings',
+        element: <Settings/>
       }
     ]
   },

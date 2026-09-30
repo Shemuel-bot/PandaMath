@@ -24,11 +24,11 @@ export default function Sidebar(){
                 <img src={trainingIcon} alt="Training icon" className={style.icon} />
                 Training
             </button>
-            <button>
+            <button onClick={() => {navigate('/profile')}}>
                 <img src={profileIcon} alt="Profile icon" className={style.icon} />
                 Profile
             </button>
-            <button>
+            <button onClick={() => {navigate('/settings')}}>
                 <img src={settingsIcon} alt="Settings icon" className={style.icon} />
                 Settings
             </button>
